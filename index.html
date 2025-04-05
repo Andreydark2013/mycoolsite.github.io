@@ -1,55 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <title>ПОРТОФОЛИО</title>
-    <style>
-        body{
-        font-family: 'Comic Sans Ms', sans-serif;
-        background-color: #232323;
-        color: #ffffff;
-        margin: 0;
-        padding: 0;
-        }
-        header {
-        background: linear-gradient(90deg, #326d32, #4caf50);
-        padding: 20px;
-        font-size: 24px;
-        font-weight: bold;
-        text-transform: uppercase;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        }
-        footer {
-        background: linear-gradient(90deg, #326d32, #4caf50);
-        padding: 20px;
-        font-size: 24px;
-        font-weight: bold;
-        text-transform: uppercase;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        }
-    </style>
+    <title>ПОРТФОЛИО</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', sans-serif;
+      background-color: #232323;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header,footer {
+      background: rgb(18, 115, 18);
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .photo {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .info {
+      flex: 1;
+      font-size: 18px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+    .row {
+    display: flex;
+    margin-bottom: 20px;
+    }
+
+    .label {
+    width: 160px;
+    font-weight: bold;
+    }
+
+    .value {
+    flex: 1;
+    }
+  </style>
 </head>
 <body>
-    <header>
-    <H1>ПОРТОФОЛИО</H1>
-    </header>
-    <h2><b>Имя:</b> Андрей</h2>
-    <h2><b>Фамилия:</b> Леурдо</h2>
-    <img src="photo_2025-04-05_14-25-04.jpg" height="500">
-    <h3>Мои хобби</h3>
-    <ul>
-        <li>Люблю рисовать</li>
+  <header>
+    ПОРТФОЛИО
+  </header>
+
+  <div class="content">
+    <div class="photo">
+      <img src="photo_2025-04-05_14-25-04.jpg" alt="Моё фото">
+    </div>
+    <div class="info">
+      <div class="row"><span class="label">Имя:</span><span class="value">Андрей</span></div>
+      <div class="row"><span class="label">Фамилия:</span><span class="value">Леурдо</span></div>
+      <div class="row"><span class="label">Дата рождения:</span><span class="value">20 марта 2013 года</span></div>
+      <div class="row"><span class="label">Возраст:</span><span class="value">12 лет</span></div>
+      <div class="row"><span class="label">Где живу:</span><span class="value">Грузия, Тбилиси</span></div>
+      <div class="row"><span class="label">Где родился:</span><span class="value">Беларусь, Минск</span></div>
+      <div class="row"><span class="label">Национальность:</span><span class="value">Полу-Беларус, Полу-Армянин</span></div>
+
+      <b>Мои хобби:</b>
+      <ul>
+        <li>Рисовать</li>
         <li>Рисовать в Roblox Studio</li>
-        <li>Играть в Roblox или Minecraft</li>
-    </ul>
-    <p><b>Дата рождения:</b> 20 марта 2013 года</p>
-    <h3>12 лет</h3>
-    <h2><b>Место проживания:</b> Грузия,Тбилиси</h2>
-    <h2><b>Место рождения:</b> Беларусь,Минск</h2>
-    <h2><b>Национальность:</b> Полу-Беларус,Полу-Армянин</h2>
-    <footer>
-        <h1>Конец,надеюсь вам понравилось</h1>
-    </footer>
+        <li>Играть в Roblox и Minecraft</li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    Конец, надеюсь вам понравилось!
+  </footer>
+
 </body>
 </html>
