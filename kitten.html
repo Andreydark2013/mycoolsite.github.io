@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Кошечки</title>
+  <style>
+    body {
+      font-family: "Comic Sans Ms", sans-serif;
+      background: linear-gradient(45deg, #f6d365, #fda085);
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .mood {
+      margin: 0 auto;
+      width: 90%;
+      max-width: 800px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 20px;
+      color: #333;
+    }
+
+    .mood img {
+      display: none;
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 15px;
+      transition: all 0.5s ease;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+    display: block;
+    background: linear-gradient(to right, #fade81, #f79b1a);
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    margin: 10px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition:1s;
+    }
+
+    label:hover {
+        background:#f79b1a;
+    }
+
+    input:checked + label + img {
+      display: block;
+    }
+
+    footer {
+      margin-top: 40px;
+      background-color: #b07a2f;
+      padding: 20px;
+      font-weight: bold;
+      color: white;
+    }
+
+    footer img {
+    margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Какое у тебя настроение?</h1>
+  <div class="mood">
+    <input type="radio" name="mood" id="happy" checked>
+    <label for="happy">Хорошее</label>
+    <img src="https://i.pinimg.com/736x/ca/0d/70/ca0d7029141ffafb42d5c3fea583af8c.jpg" alt="Happy Cat">
+
+    <input type="radio" name="mood" id="sad">
+    <label for="sad">Грустное</label>
+    <img src="http://cdn.iz.ru/sites/default/files/styles/970x546/public/video_item-2017-09/kttttt65878778.JPG.jpg" alt="Sad Cat">
+
+    <input type="radio" name="mood" id="angry">
+    <label for="angry">Злое</label>
+    <img src="https://i.pinimg.com/736x/75/c3/d6/75c3d6e57a340d96e7dd3c0ee5bff7a1.jpg" alt="Angry Cat">
+
+    <input type="radio" name="mood" id="cute">
+    <label for="cute">Милое</label>
+    <img src="https://i.pinimg.com/736x/7b/f3/10/7bf310bd79c08c9ab94877b725999370.jpg" alt="Cute Cat">
+
+    <input type="radio" name="mood" id="playful">
+    <label for="playful">Игривая</label>
+    <img src="https://avatars.mds.yandex.net/i?id=ea5baec5f1b01a27f6f42a7aa0cfdc42_l-7753204-images-thumbs&n=13" alt="Playful Cat">
+
+    <input type="radio" name="mood" id="bored">
+    <label for="bored">Скучное</label>
+    <img src="https://i.pinimg.com/736x/35/99/ec/3599ec630131aef25538c3adef197679.jpg" alt="Bored Cat">
+
+    <input type="radio" name="mood" id="superhappy">
+    <label for="superhappy">Happy Happy Happy!</label>
+    <img src="https://play-lh.googleusercontent.com/b3GKgSOPkgHNWoP8ifNfY9WkA5U4_YjXNzyjvhwX5Lf0KSteuJgI2sldpDVyYClWbshX" alt="Super Happy Cat">
+  </div>
+
+  <footer>
+    Спасибо за просмотр
+    <img src="https://i.pinimg.com/originals/14/14/d9/1414d97352d78a1bb1664c22f0460162.png" height="55" alt="Cat Icon">
+  </footer>
+
+</body>
+</html>
